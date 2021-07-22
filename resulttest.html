@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Result Test</title>
+        <script src="resulttest.js"></script>
+        <link rel="stylesheet" href="style1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Palanquin+Dark&family=Sansita&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Test Bilangan</h1>
+        <p>Apa yang akan di tampilkan "Hello", "World" atau "Hello World"?</p>
+        <form name="testbilangan">
+            <table class="tr">
+                <tr>
+                    <td>
+                        <input type="text" class="fr" name="a" id="a" placeholder="Input bilangan....">
+                    </td>
+                    <td>
+                        <input type="button" name="submit1" id="submit1" onclick="validasiBilangan()" value="Cek Result">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" class="fr" name="b" id="b"></td>
+                </tr>
+            </table>
+        </form>
+        <br><br>
+        <h1>Test Check Email</h1>
+        <p>Format email wajib menggunakan '@'</p>
+        <form name="testemail1" onsubmit="validasiEmail1();">
+            <table class="tr">
+                <tr>
+                    <td>
+                        <input type="text" class="fr" name="email1" id="email1" placeholder="Input email anda....">
+                    </td>
+                    <td>
+                        <input type="submit" name="submit2" id="submit2" value="Cek Result">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>Format email wajib menggunakan tanda  titik '.' setelah '@'</p>
+        <form name="testemail2" onsubmit="validasiEmail2();">
+            <table class="tr">
+                <tr>
+                    <td>
+                        <input type="text" class="fr" name="email2" id="email2" placeholder="Input email anda....">
+                    </td>
+                    <td>
+                        <input type="submit" name="submit3" id="submit3" value="Cek Result">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>Panjang email maksimum 20 karakter sebelum '@'</p>
+        <form name="testemail3" onsubmit="validasiEmail3();">
+            <table class="tr">
+                <tr>
+                    <td>
+                        <input type="text" class="fr" name="email3" id="email3" placeholder="Input email anda....">
+                    </td>
+                    <td>
+                        <input type="submit" name="submit4" id="submit4" value="Cek Result">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>Domain yang diperbolehkan hanya ".co.id" dan ".id</p>
+        <form name="testemail4" onsubmit="validasiEmail4();">
+            <table class="tr">
+                <tr>
+                    <td>
+                        <input type="text" class="fr" name="email4" id="email4" placeholder="Input email anda....">
+                    </td>
+                    <td>
+                        <input type="submit" name="submit5" id="submit5" value="Cek Result">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br><br>
+        <h1>Test Check DateTime</h1>
+        <p>Konversi waktu</p>
+        <form name="cekdate" onsubmit="validasiDate();">
+            <table class="fo">
+                <tr>
+                    <td>
+                        <input type="text" class="sc" name="jam" id="jam" placeholder="HH"> :
+                    </td>
+                    <td>
+                        <input type="text" class="sc" name="menit" id="menit" placeholder="MM"> :
+                    </td>
+                    <td>
+                        <input type="text" class="sc" name="detik" id="detik" placeholder="SS"> :
+                    </td>
+                    <td>
+                        <input type="submit" name="submit6" id="submit6" value="Cek Result">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br><br>
+        <h1>Reverse Kalimat</h1>
+        <p>Aplikasi reverse kalimat</p>
+        <form name="reverse">
+            <table class="tr">
+                <tr>
+                    <td>
+                        <input type="text" class="fr" name="x" id="x" placeholder="Masukkan contoh kalimat....">
+                    </td>
+                    <td>
+                        <input type="button" name="submit7" id="submit7" onclick="validasiKalimat()" value="Cek Result">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" class="fr" name="y" id="y"></td>
+                </tr>
+            </table>
+        </form>
+        <br><br>
+        <h1>Test Check Palindrom</h1>
+        <p>Aplikasi sederhana cek kalimat palindrom</p>
+        <form name="palindrom">
+            <table class="tr">
+                <tr>
+                    <td>
+                        <input type="text" class="fr" name="u" id="u" placeholder="Masukkan contoh kalimat....">
+                    </td>
+                    <td>
+                        <input type="button" name="submit8" id="submit8" onclick="palindrome()" value="Cek Result">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" class="fr" name="v" id="v"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

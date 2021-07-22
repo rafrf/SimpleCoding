@@ -1,0 +1,52 @@
+*{
+    font-family: 'Palanquin Dark', sans-serif;
+}
+table.tr {
+    width: 34%;
+}
+table.tr tr td{
+    text-align:center;
+    font-size: 19px;
+    font-weight: bold;
+    size: 100%;
+}
+td input.fr{
+    width: 110%;
+}
+td input.sc{
+    width: 80%;
+    text-align: center;
+}
+table.fo {
+    width: 20%;
+}
+table.fo tr td{
+    font-size: 19px;
+    font-weight: bold;
+    size: 20%;
+}
+input[type=button], input[type=submit]{
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+    outline: none;
+    margin-left: 5px;
+}
+input[type=button]:hover, input[type=submit]:hover{
+    color: white;
+    background-color: rgb(9, 97, 138);
+    border: 1px solid rgb(9, 97, 138);
+}
+input.fr[type=text] {
+    padding-left: 10px;
+}
+input[type=text]:focus {
+    color: white;
+    background-color: rgb(9, 97, 138);
+}
+input[type=text]:hover {
+    border: 2px solid rgb(9, 97, 138);
+}
